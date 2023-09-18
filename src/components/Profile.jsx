@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// Initial Profile State...
 const profileData = {
 	name: "",
 	email: "",
@@ -13,13 +12,6 @@ const Profile = () => {
 	const [isModalActive, setModalActive] = useState(false);
 	const [activeBtn, setactiveBtn] = useState("basic");
 
-
-	// isModalActive
-	//   ? (document.body.style.overflow = "hidden")
-	//   : (document.body.style.overflow = "scroll")
-
-
-	// Profile-Form-State-Management...
 	const [profileDetails, setProfileDetails] = useState(profileData);
 	const [errorMsg, setErrorMsg] = useState(false);
 
@@ -32,7 +24,6 @@ const Profile = () => {
 		});
 	};
 
-	// Submiting-Basic-Details-And-Moving-Contact-Tab...
 	const submitBasicDetails = () => {
 		const { name, email, phone } = profileDetails;
 		if (name !== "" && email !== "" && phone !== "") {

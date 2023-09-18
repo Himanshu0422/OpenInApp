@@ -8,7 +8,6 @@ import {
 	Title,
 	LinearScale,
 	PointElement,
-	//   DoughnutElement,
 } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
@@ -20,7 +19,6 @@ ChartJS.register(
 	Title,
 	LinearScale,
 	PointElement,
-	//   DoughnutElement
 );
 
 const DemoPieChart = () => {
